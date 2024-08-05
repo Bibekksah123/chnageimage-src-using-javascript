@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .imgss img{
+      height: 90px;
+      margin: auto;
+      display: block;
+      aspect-ratio: 3/2;
+     width: 15%;
+     object-fit:contain;
+    mix-blend-mode: multiply;
+    }
+    .product{
+      position: absolute;
+      top: 50%;
+     
+    }
+
+  </style>
+</head>
+<body>
+  <div class="product">
+  <div class="imgss">
+<img src="OIP (12).jpg" alt="" onclick="funchange(this)">
+<img src="OIP (2).jpg" alt="" onclick="funchange(this)">
+<img src="OIP (5).jpg" alt="" onclick="funchange(this)">
+<img src="OIP (6).jpg" alt="" onclick="funchange(this)">
+  </div>
+  <img src="OIP (8).jpg" alt="" class="box">
+  </div>
+  <script>
+ function funchange(change){
+  let changed=document.querySelector('.box');
+  changed.src=change.src;
+ }
+  </script>
+</body>
+</html>
